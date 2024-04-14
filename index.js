@@ -120,6 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!existing) {
         unique.push(item);
       }
+      
       return unique;
     }, []);
   }
