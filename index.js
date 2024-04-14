@@ -68,7 +68,9 @@ document.addEventListener('DOMContentLoaded', () => {
     taskActions.appendChild(deleteBtn);
 
     taskItem.appendChild(taskImage);
+
     taskItem.appendChild(taskTitle);
+    
     taskItem.appendChild(taskDate);
     taskItem.appendChild(taskActions);
 
@@ -87,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  
+
   function deleteTask(taskItem) {
     taskItem.remove();
   }
