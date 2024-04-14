@@ -1,4 +1,5 @@
 ## HolidayTracker: Streamlining Public Holiday Management
+
 In our modern world, managing public holidays can be a complex task. With various holidays scattered throughout the year, each with its own significance and cultural context, keeping track of them all can be challenging. HolidayTracker is a web application designed to alleviate this burden by providing users with a simple and intuitive platform for organizing and managing public holidays. In this comprehensive overview, we will explore the features, functionality, user interface, and benefits of HolidayTracker in detail.
 
 ## Understanding the Need
