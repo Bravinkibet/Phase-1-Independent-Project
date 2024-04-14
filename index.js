@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  
   function deleteTask(taskItem) {
     taskItem.remove();
   }
@@ -115,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to remove duplicates from an array of objects based on a specific key
   function removeDuplicates(arr, key) {
-    
+
     return arr.reduce((unique, item) => {
       const existing = unique.find(i => i[key] === item[key]);
       if (!existing) {
