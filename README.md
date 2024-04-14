@@ -7,6 +7,7 @@ Public holidays play a significant role in our lives, marking important events, 
 This is where HolidayTracker comes in. By centralizing holiday information and providing tools for organization and management, HolidayTracker helps users stay informed, plan ahead, and make the most of their holiday time.
 
 ## Features and Functionality
+
 - Fetching Public Holidays Data: At the core of HolidayTracker is its ability to fetch public holiday data from external sources. Leveraging APIs like the Nager.Date API, HolidayTracker retrieves a comprehensive list of public holidays for the specified year and country. This ensures that users have access to accurate and up-to-date holiday information.
 
 - Dynamic Task Item Generation: Once the holiday data is retrieved, HolidayTracker dynamically generates task items for each holiday. These task items are displayed in a list format, providing users with a clear overview of upcoming holidays. Each task item includes details such as the holiday name, date, and actions (Mark Complete, Edit, Delete).
