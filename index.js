@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     completeBtn.classList.add('complete');
     completeBtn.textContent = 'Mark Complete';
     completeBtn.addEventListener('click', () => toggleTaskStatus(taskItem));
+    
 
     const editBtn = document.createElement('button');
     editBtn.classList.add('edit');
