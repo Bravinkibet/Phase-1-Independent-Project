@@ -54,9 +54,13 @@ It includes styles for the body, container, headings, form elements, list items,
 It performs several key functions:
 
 - DOMContentLoaded Event Listener: Waits for the HTML document to be fully loaded and parsed before executing the script. This ensures that all elements are available for manipulation.
+
 - Fetching Public Holidays: Uses the fetch API to retrieve public holiday data for the year 2020 in the US from the Nager.Date API. It then processes the data to remove duplicates based on the holiday name.
+
 - Presidents' Day Handling: Checks if Presidents' Day is included in the fetched data. If not, it manually adds Presidents' Day at the third position in the list.
+
 - Creating Task Items: For each unique holiday, it dynamically creates a task item (<li>) with an image, title, date, and action buttons (Mark Complete, Edit, Delete). The createTaskItem function constructs these elements and appends them to the task list.
+
 - Interactive Features: Toggle Task Status allows users to mark a holiday as complete by toggling the completed class on the task item. Edit Task enables users to edit the name of a holiday through a prompt dialog. Delete Task provides a way to remove a holiday from the list. Image Handling uses a predefined mapping of holiday names to image URLs to display relevant images for each holiday. If an image URL is not found, a default placeholder image is used. Removing Duplicates implements a removeDuplicates function to ensure that each holiday name appears only once in the list, preventing duplicate entries.
 # Conclusion
 In conclusion, HolidayTracker is a valuable tool for anyone looking to simplify the process of managing public holidays. With its intuitive interface, dynamic task generation, and interactive features, HolidayTracker empowers users to stay organized, efficient, and informed about upcoming holidays. Whether planning vacations, scheduling events, or simply staying on top of important dates, HolidayTracker is the go-to solution for hassle-free holiday management.
