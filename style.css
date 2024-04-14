@@ -1,104 +1,127 @@
-/* style.css */
-
 /* Body styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif; /* Set font family for the body */
+  background-image: url('https://s3.amazonaws.com/nightjarprod/content/uploads/sites/130/2024/01/14125822/Dune-Part-2-poster2-1404x2048.jpg'); /* Set background image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
 }
 
 /* Container styles */
 .container {
-  max-width: 800px; /* Increased width for better readability */
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+  max-width: 800px; /* Set maximum width for the container */
+  margin: 20px auto; /* Center the container horizontally with 20px margin on top and bottom */
+  padding: 20px; /* Add padding inside the container */
+  background-image: url(https://i.pinimg.com/564x/51/0d/36/510d360d31e606f3c5952eee13122c98.jpg); /* Set background image for the container */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 /* Heading styles */
 h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333; /* Dark grey color */
+  text-align: center; /* Center-align the heading */
+  margin-bottom: 20px; /* Add space below the heading */
+  color: #fcd705; /* Set text color */
+  font-family: 'Times New Roman', Times, serif; /* Set font family for the heading */
+}
+
+h2 {
+  text-align: center; /* Center-align the heading */
+  margin-bottom: 20px; /* Add space below the heading */
+  color: #ffd104; /* Set text color */
+  font-family: 'Times New Roman', Times, serif; /* Set font family for the heading */
 }
 
 /* Form styles */
 .task-form {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Add space below the form */
 }
 
 .task-input {
-  width: calc(100% - 100px);
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
+  width: calc(100% - 100px); /* Set width for the input field */
+  padding: 10px; /* Add padding */
+  border: 1px solid #cccccce0; /* Set border */
+  border-radius: 5px 0 0 5px; /* Add rounded corners */
 }
 
 .task-submit {
-  width: 100px;
-  padding: 10px;
-  background-color: #007bff;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  color: #fff;
-  cursor: pointer;
+  width: 100px; /* Set width for the submit button */
+  padding: 10px; /* Add padding */
+  background-color: #007bff; /* Set background color */
+  border: none; /* Remove border */
+  border-radius: 0 5px 5px 0; /* Add rounded corners */
+  color: #fff; /* Set text color */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 /* List styles */
 .task-list {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
 }
 
 .task-item {
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  display: grid; /* Using CSS Grid for column layout */
-  grid-template-columns: repeat(6, 1fr); /* Creating 6 equal-width columns */
-  gap: 10px; /* Adding gap between columns */
-  align-items: center;
+  padding: 10px; /* Add padding */
+  margin-bottom: 10px; /* Add space below each item */
+  background-color: rgba(255, 255, 255, 0.5); /* Set background color with transparency */
+  border-radius: 5px; /* Add rounded corners */
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(6, 1fr); /* Divide item into 6 equal columns */
+  gap: 10px; /* Add gap between columns */
+  align-items: center; /* Align items vertically */
 }
 
 /* Task title styles */
 .task-item .task-title {
-  grid-column: span 3; /* Spanning 3 columns */
-  color: #333; /* Dark grey color */
+  grid-column: span 3; /* Span 3 columns */
+  color: #064206; /* Set text color */
 }
 
 /* Task actions styles */
 .task-item .task-actions {
-  grid-column: span 3; /* Spanning 3 columns */
-  display: flex;
-  justify-content: space-between;
+  grid-column: span 3; /* Span 3 columns */
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Space items evenly */
 }
 
 /* Button styles */
 .task-item .task-actions button {
-  padding: 8px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 8px 15px; /* Add padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 /* Mark completed button styles */
 .task-item .task-actions button.complete {
-  background-color: #28a745; /* Green color for completed button */
-  color: #fff;
+  background-color: #28a745; /* Set background color for completed button */
+  color: #3d0505; /* Set text color */
 }
 
 /* Completed task item styles */
 .task-item.completed {
-  background-color: #d4edda; /* Light green color for completed task */
-  color: #155724;
+  background-image: #674bd4; /* Set background color for completed task */
+  color: #155724; /* Set text color */
 }
 
 /* Limit the size of holiday images */
 .holiday-image {
-  max-width: 100px; /* Set the maximum width */
-  max-height: 100px; /* Set the maximum height */
+  max-width: 100px; /* Set maximum width */
+  max-height: 100px; /* Set maximum height */
 }
+/* Add space between spans in task-header */
+.task-header {
+  display: flex; /* Use flexbox to align items */
+}
+
+.task-header span:first-child {
+  margin-right: auto; /* Push the first span to the left by making the right margin auto */
+  margin-left: 10px; /* Add 10px left margin */
+}
+
+.task-header span:last-child {
+  margin-left: auto; /* Push the last span to the right by making the left margin auto */
+  margin-right: 210px; /* Add 210px right margin */
+}
+

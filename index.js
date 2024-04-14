@@ -114,6 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
         unique.push(item);
       }
       return unique;
+    
     }, []);
   }
+  
 });
