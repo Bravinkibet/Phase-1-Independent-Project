@@ -66,11 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
     taskActions.appendChild(completeBtn);
     taskActions.appendChild(editBtn);
     taskActions.appendChild(deleteBtn);
-
     taskItem.appendChild(taskImage);
-
     taskItem.appendChild(taskTitle);
-    
     taskItem.appendChild(taskDate);
     taskItem.appendChild(taskActions);
 
