@@ -13,10 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
         uniqueHolidays.splice(presidentsDayIndex, 0, { name: "Presidents' Day", date: '2020-02-17' });
       }
 
-      uniqueHolidays.forEach(holiday => {
-        const taskItem = createTaskItem(holiday);
+      // Use map to transform the array of holidays into an array of task items
+      const taskItems = uniqueHolidays.map(holiday => createTaskItem(holiday));
+
+      // Append the task items to the task list
+      taskItems.forEach(taskItem => {
         taskList.appendChild(taskItem);
       });
+
+      // Calculate total number of holidays
+      const totalHolidays = uniqueHolidays.reduce((total, holiday) => total + 1, 0);
+      console.log('Total number of holidays:', totalHolidays);
     })
     .catch(error => console.error('Error fetching public holidays:', error));
 
@@ -114,8 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
         unique.push(item);
       }
       return unique;
-    
     }, []);
   }
-  
 });
