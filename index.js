@@ -119,8 +119,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const existing = unique.find(i => i[key] === item[key]);
       if (!existing) {
         unique.push(item);
+        
       }
-      
+
       return unique;
     }, []);
   }
