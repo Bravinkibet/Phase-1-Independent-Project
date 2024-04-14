@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const editBtn = document.createElement('button');
     editBtn.classList.add('edit');
+    
     editBtn.textContent = 'Edit';
     editBtn.addEventListener('click', () => editTask(holiday, taskTitle));
 
