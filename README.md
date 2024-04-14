@@ -43,10 +43,13 @@ This HTML code sets up the structure for a web application named HolidayTracker,
 It includes styles for the body, container, headings, form elements, list items, buttons, and additional styles for the task-header. The design is responsive, with a focus on readability and aesthetics. Key features include:
 
 - A light background color for the body and a white container with rounded corners and a subtle shadow for a modern look.
+
 - Center-aligned headings with a dark grey color for emphasis and Times New Roman font family for a classic touch.
+
 - Form elements styled for input and submission, with a focus on usability and aesthetics.
 - A grid layout for list items, allowing for a flexible and organized display of holiday information.
 - Custom styles for buttons, including a distinctive green color for the "Mark Complete" button to indicate completion.
+
 - A limit on the size of holiday images to ensure they fit well within the layout.
 - Added styles for task-header to position the spans as required.
 
