@@ -101,7 +101,7 @@ h2 {
 
 /* Completed task item styles */
 .task-item.completed {
-  background-image: #674bd4; /* Set background color for completed task */
+  background-color: #354dd4; /* Set background color for completed task */
   color: #155724; /* Set text color */
 }
 
@@ -110,6 +110,7 @@ h2 {
   max-width: 100px; /* Set maximum width */
   max-height: 100px; /* Set maximum height */
 }
+
 /* Add space between spans in task-header */
 .task-header {
   display: flex; /* Use flexbox to align items */
@@ -124,4 +125,3 @@ h2 {
   margin-left: auto; /* Push the last span to the right by making the left margin auto */
   margin-right: 210px; /* Add 210px right margin */
 }
-
