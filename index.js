@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add a mouseover event listener to the container
   const container = document.querySelector('.container');
   container.addEventListener('mouseover', function(event) {
-    // Example: Change background color when mouse enters the container
+    // Change background color when mouse enters the container
     if (event.target === this) {
       this.style.backgroundColor = '#f0f0f0';
     }
