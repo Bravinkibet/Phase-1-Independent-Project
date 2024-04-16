@@ -15,10 +15,47 @@
         <span>Date</span>
       </div>
     </h2>
+    <form class="task-form">
+      <input type="text" class="task-input" placeholder="Enter a holiday name">
+      <button type="submit" class="task-submit">Add Holiday</button>
+    </form>
     <button id="clear-list-btn">Clear List</button>
     <ul class="task-list" id="task-list"></ul>
   </div>
 
   <script src="index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Click Event Listener
+      const clearListBtn = document.getElementById('clear-list-btn');
+      clearListBtn.addEventListener('click', clearTaskList);
+
+      // Submit Event Listener
+      const taskForm = document.querySelector('.task-form');
+      taskForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const inputValue = this.querySelector('.task-input').value;
+        if (inputValue.trim() !== '') {
+          // Add your logic for adding a new holiday here
+          console.log('Adding holiday:', inputValue);
+        }
+        this.reset();
+      });
+
+      // Mouseover Event Listener
+      const container = document.querySelector('.container');
+      container.addEventListener('mouseover', function(event) {
+        // Example: Change background color when mouse enters the container
+        if (event.target === this) {
+          this.style.backgroundColor = '#f0f0f0';
+        }
+      });
+
+      function clearTaskList() {
+        const taskList = document.getElementById('task-list');
+        taskList.innerHTML = '';
+      }
+    });
+  </script>
 </body>
 </html>
