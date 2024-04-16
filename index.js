@@ -121,10 +121,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const existing = unique.find(i => i[key] === item[key]);
       if (!existing) {
         unique.push(item);
-
       }
 
       return unique;
     }, []);
   }
+
+  function clearTaskList() {
+    taskList.innerHTML = '';
+  }
+
+  // Add event listener to a hypothetical "Clear List" button
+  const clearListBtn = document.getElementById('clear-list-btn');
+  clearListBtn.addEventListener('click', clearTaskList);
 });
