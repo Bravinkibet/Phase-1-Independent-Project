@@ -133,18 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const clearListBtn = document.getElementById('clear-list-btn');
   clearListBtn.addEventListener('click', clearTaskList);
 
-  // Add a submit event listener to the form
-  const taskForm = document.querySelector('.task-form');
-  taskForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const inputValue = this.querySelector('.task-input').value;
-    if (inputValue.trim() !== '') {
-      // Add your logic for adding a new holiday here
-      console.log('Adding holiday:', inputValue);
-    }
-    this.reset();
-  });
-
   // Add a mouseover event listener to the container
   const container = document.querySelector('.container');
   container.addEventListener('mouseover', function(event) {
