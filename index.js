@@ -141,5 +141,4 @@ document.addEventListener('DOMContentLoaded', () => {
       this.style.backgroundColor = '#f0f0f0';
     }
   });
-
 });
