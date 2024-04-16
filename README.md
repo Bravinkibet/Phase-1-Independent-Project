@@ -79,3 +79,4 @@ The index.js file contains JavaScript code responsible for fetching public holid
 ## Conclusion
 
 In conclusion, HolidayTracker is a valuable tool for anyone looking to simplify the process of managing public holidays. With its intuitive interface, dynamic task generation, and interactive features, HolidayTracker empowers users to stay organized, efficient, and informed about upcoming holidays. Whether planning vacations, scheduling events, or simply staying on top of important dates, HolidayTracker is the go-to solution for hassle-free holiday management.
+
